@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch sử mua hàng</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lịch sử mua hàng</h2>
+    <a href="Sanpham.html">⬅ Quay lại mua sắm</a>
+    <table id="lichsuTable">
+        <thead>
+            <tr>
+                <th>Ngày mua</th>
+                <th>Sản phẩm</th>
+                <th>Thanh toán</th>
+                <th>Thông tin giao hàng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lịch sử sẽ được thêm ở đây bằng JS -->
+        </tbody>
+    </table>
+
+    <script>
+        const ls = JSON.parse(localStorage.getItem("lichsumua")) || [];
+        const tbody = document.querySelector("#lichsuTable tbody");
+
+        if (ls.length === 0) {
+            tbody.innerHTML = "<tr><td colspan='4'>Chưa có đơn hàng nào.</td></tr>";
+        } else {
+            ls.forEach(don => {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td>${don.ngay}</td>
+                    <td>${don.sanpham.map(sp => `${sp.ten} x${sp.soluong}`).join("<br>")}</td>
+                    <td>${don.pttt}</td>
+                    <td>${don.hoten}<br>${don.sdt}<br>${don.diachi}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+</body>
+</html>

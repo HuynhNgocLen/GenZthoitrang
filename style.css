@@ -1,0 +1,630 @@
+
+.thanhngang {
+    justify-content: flex-start;
+    text-align: center;
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.thanhnganggiua {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.thongbao {
+    margin-top: 59px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: gainsboro;
+    color: black;
+    padding:  0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.chaychu{
+    display: flex;
+    gap: 100px;
+    font-weight: bold;
+    min-width: 200%;
+    animation: chaychu 25s linear infinite;
+}
+@keyframes chaychu {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.thanhngang ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.thanhngangtrai li {
+    margin-right: 50px;
+}
+.thanhngangphai li {
+    margin-left: 25px;
+}
+.thanhngang a {
+    margin-right: 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.thanhngangtrai a:hover {
+    color: gray;
+    text-decoration: underline;
+    
+}
+.thanhngangphai a:hover {
+    color: gray;
+    text-decoration: underline;
+    
+}
+.thongtinphai input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+ư
+
+.thongtinphai button {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: black;
+}
+.timkiem:hover {
+    background-color: gray; 
+}
+
+main {
+    margin-top: 95px;
+    margin-bottom: 100px;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 65ch;
+    object-fit: cover;
+    object-position: top;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 50px;
+    top: 0;
+    left: 0;
+    width: 92.5%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.thongtin {
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+}
+
+.thongtintrai {
+    font-size: 18px;
+    text-align: left;
+    width: 50%;
+}
+
+.thongtinphai{
+    font-size: 18px;
+    display: flex;
+    text-align: right;
+    width: 20%;
+}
+.thongtinphai p {
+    margin-right: 60px;
+}
+/*ô*/
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ophai {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 10px;
+}
+
+.ophai {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+}
+.hot-new {
+    color: red;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+.osanpham {
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(25% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.osanpham:hover {
+    transform: scale(1.05);
+}
+.osanpham img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha */
+    height: 300px; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.osanpham h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.osanpham .price {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.xemngay {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+}
+.xemngay:hover {
+    background-color: 	#27ae60;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.buy-now, .add-to-cart {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 48%;
+}
+
+.buy-now {
+    background-color: #333;
+    color: #fff;
+}
+
+.add-to-cart {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.buy-now:hover {
+    background-color: #555;
+}
+
+.add-to-cart:hover {
+    background-color: #f0f0f0;
+}
+
+/* đăng nhập */
+.chia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bentraidangnhap {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 90px;
+}
+
+
+.benphaidangnhap {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Dangnhap {
+    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.nhapvao input {
+    width: 100%;
+    padding: 10px 0; 
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px;
+    outline: none;
+}
+
+.nhapvao input:focus {
+    border-bottom: 2px solid #4e90f1;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #4e90f1;
+    font-size: 18px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.nut {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-btn, .facebook-btn {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #4e90f1;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #3c7bd1;
+    transform: scale(1.05);
+    
+}
+
+
+/* Hiệu ứng khi hover qua các ô input */
+.nhapvao input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.nhapvao input:focus::placeholder {
+    color: #4e90f1;
+    font-style: normal;
+}
+.o {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* nếu muốn thêm khoảng cách giữa trái phải */
+}
+.boloc {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Chính là cái "cách nhau" bạn muốn */
+}
+
+.boloc label {
+    font-size: 20px;
+}
+/* Bên trái: bộ lọc */
+.otrai {
+    width: 10%;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Bên phải: danh sách sản phẩm */
+.ophai {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*Bo loc*/
+.boloc {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.loc-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.loc-btn:hover {
+    background-color: #444;
+}
+.osanpham {
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.osanpham.hidden {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*test*/
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button hiển thị dropdown */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Nội dung dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99;
+    border-radius: 5px;
+}
+
+/* Các liên kết bên trong dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Thêm hiệu ứng cho nút */
+.dropdown:hover .dropbtn {
+    color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 9999; /* Đè lên mọi thứ */
+    border-radius: 5px;
+}
+/*sản phâm trống che đi*/
+.hidden {
+    display: none !important;
+}
+/*Thong tin khach hang*/
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff0077;
+    margin-bottom: 10px;
+}
+
+.info-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.info-form input,
+.info-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.info-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ff0077;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.info-form button:hover {
+    background-color: #e6006f;
+}
+.thongtin-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.thongtin-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#user-info-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#user-info-form input,
+#user-info-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#user-info-form button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ff0077;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.required {
+    color: red;
+    font-weight: bold;
+}
+/*tim kiem*/
+/* Hiệu ứng khi hover qua các ô input */
+.nhapvao input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+.danhsach-sanpham {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng - GenZ</title>
+    <script src="giohang.js" defer></script>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+<body>
+    <main>
+        <div class="nav-buttons">
+            <a href="Sanpham.html" class="btn-green">Quay lại</a>
+            <a href="lichsumua.html" class="link-blue">Xem lịch sử mua hàng</a>
+        </div>
+
+        
+        <section class="giohang">
+            <h2>🛒 Giỏ hàng của bạn</h2>
+
+            <table class="banggiohang">
+                <thead>
+                    <tr style="font-size: 19px; color: gray;">
+                        <td>Chọn</td>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Size</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xoá</th>
+                    </tr>
+                </thead>
+                <tbody id="danhsachSP" style="color: black; font-weight: bold; font-size: 17px;">
+                    <!-- Sản phẩm sẽ được hiển thị bằng JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="tongtien">
+                <p><strong>Tổng cộng:</strong> <span id="tongTien">0</span></p>
+            </div>
+            <!--Địa chỉ khách hàng-->
+            <div class="diachi">
+                <h3>Địa chỉ nhận hàng</h3>
+                <label>
+                    Họ tên người nhận:<br>
+                    <input type="text" id="hoten" placeholder="Nguyễn Văn A" style="width: 50%; padding: 8px; margin-top: 5px; border-radius: 30px; height: 30px;">
+                </label><br><br>
+                <label>
+                    Số điện thoại:<br>
+                    <input type="tel" id="sdt" placeholder="0123456789" style="width: 50%; padding: 8px; margin-top: 5px; border-radius: 30px; height: 30px;">
+                </label><br><br>
+                <label>
+                    Địa chỉ:<br>
+                    <textarea id="diachi" placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố" style="width: 50%; padding: 8px; margin-top: 5px;" rows="3"></textarea>
+                </label>
+            </div>
+
+            <div class="thanhtoan">
+                <h3>Phương thức thanh toán</h3>
+                <label><input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng</label><br>
+                <label><input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng</label><br>
+            </div>
+            <!-- Thông tin thanh toán ngân hàng -->
+            <div id="bankInfo" style="display: none; margin-top: 15px; border: 1px solid #ccc; padding: 15px; border-radius: 5px;">
+                <h4>💳 Thông tin chuyển khoản</h4>
+                <p><strong>Ngân hàng:</strong> MB Bank</p>
+                <p><strong>Số tài khoản:</strong> 119877979999</p>
+                <p><strong>Chủ tài khoản:</strong> NGUYEN THI YEN NHU</p>
+                <p><strong>Nội dung chuyển khoản:</strong> SĐT của bạn + tên</p>
+                <p style="color: red; font-family:sans-serif;"><strong>LƯU Ý:</strong> SAU KHI THANH TOÁN THÀNH CÔNG VUI LÒNG CHỤP MÀN HÌNH, HỆ THỐNG SẼ TIẾN HÀNH KIỂM TRA VÀ ĐI ĐƠN SỚM NHẤT</p>
+                <p><strong>Quét mã QR để thanh toán:</strong></p>
+                <img src="anh/qr ngân hàng.jpg" alt="QR Chuyển khoản" style="width: 100px; height: auto;">
+            </div>
+            
+            <button onclick="thanhToan()">Thanh toán</button>
+        </section>
+    </main>
+</body>
+</html>
+
+

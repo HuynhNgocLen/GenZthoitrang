@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên Mật Khẩu - GenZ Thời Trang</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            showWelcome();
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <nav class="thanhngang">
+        <div class="logo" style="margin-left: 10px; margin-right: 30px; display: flex; align-items: center;">
+            <a href="index.html" style="font-size: 15px; font-weight: bold; white-space: nowrap;">G E N <span style="font-size: 25px;">Z</span></a></div>
+        <ul class="thanhnganggiua">
+            <ul class="thanhngangtrai" >
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="Sanpham.html">Sản phẩm</a></li>
+            </ul>
+            <ul class="thanhngangphai" >
+                <li><input type="text" placeholder="Tìm kiếm..." class="otimkiem">
+                    <button class="timkiem">Tìm Kiếm</button>
+                </li>
+                <li><a href="Giohang.html">🛒</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Tài khoản ▼</a>
+                    <div class="dropdown-content">
+                        <a href="Thongtin.html">Thông tin cá nhân</a>
+                        <a href="lichsumua.html" style="margin-left: 20px;">Lịch sử mua hàng</a>
+                        <a href="Dangnhap.html">Đăng nhập</a>
+                    </div>
+                </li>    
+            </ul>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="chia">
+        <div class="bentraidangnhap">
+            <d style="font-size: 45px; font-weight: bold;">KHÔI PHỤC<br>MẬT KHẨU</d>
+        </div>
+        <div class="benphaidangnhap">
+            <div class="Dangnhap">
+                <form id="forgotPasswordForm">
+                    <div class="nhapvao">
+                        <input type="email" id="forgotEmail" placeholder="Nhập email của bạn" required>
+                    </div>
+                    <div class="nut">
+                        <button type="submit" class="login-btn">GỬI YÊU CẦU</button>
+                    </div>
+                    <div class="links" style="margin-top: 10px;">
+                        <a href="Dangnhap.html" class="chuacotaikhoan">Quay lại đăng nhập</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="thongtin">
+        <div class="thongtintrai">
+            <p>Dám khác biệt, dám tỏa sáng!</p>
+            <p>Đặt hàng và thu tiền tận nơi toàn quốc</p> 
+            <p>Liên hệ: (036) 3348 6045</p>
+        </div>
+        <div class="thongtinphai">
+            <p>Về chúng tôi</p>
+            <p>Liên hệ</p>
+        </div>
+    </div>
+    <div class="thongtinduoi">
+        <p>© 2025 - Shop Thời Trang Bán Quần Áo GenZ</p>
+        <p>Địa chỉ đăng ký kinh doanh: Số 16 Trần Văn Ơn, phường Phú Lợi, Bình Dương - Điện thoại: (036) 3348 6045 - Email: 2424802010379@student.tdmu.edu.vn</p>
+    </div>
+</footer>
+<script type="module">
+    import { getAuth, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  
+    const firebaseConfig = {
+        apiKey: "AIzaSyCz4_jgbAULdLwqmZfv6RYz86qvHeuvdgU",
+        authDomain: "notlen-df3d3.firebaseapp.com",
+        projectId: "notlen-df3d3",
+        storageBucket: "notlen-df3d3.firebasestorage.app",
+        messagingSenderId: "1013822240707",
+        appId: "1:1013822240707:web:8ae03955b80e217ffbef76",
+        measurementId: "G-2RE6REVFM2"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+  
+    document.getElementById('forgotPasswordForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('forgotEmail').value.trim();
+  
+      try {
+        await sendPasswordResetEmail(auth, email);
+        alert("Link đặt lại mật khẩu đã được gửi! 📩 Kiểm tra hộp thư.");
+        window.location.href = "Dangnhap.html";
+      } catch (error) {
+        if (error.code === "auth/user-not-found") {
+          alert("Email này chưa đăng ký trong hệ thống!");
+        } else {
+          alert("Lỗi gửi email: " + error.message);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chitietsp.css">
+    <title>Chi tiết sản phẩm - GenZ Thời Trang</title>
+    <script src="login.js"></script>
+    
+
+    <script type="module">
+        import { showWelcome } from './showelcome.js';
+        document.addEventListener("DOMContentLoaded", showWelcome);
+      </script>  
+</head>
+<body>
+    <header>
+        <nav class="thanhngang">
+            <div class="logo" style="margin-left: 10px; margin-right: 30px; display: flex; align-items: center;">
+                <a href="index.html" style="font-size: 15px; font-weight: bold; white-space: nowrap;">G E N <span style="font-size: 25px;">Z</span></a>
+            </div>
+            <div class="thanhnganggiua">
+                <ul class="thanhngangtrai">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="Sanpham.html">Sản phẩm</a></li>
+                </ul>
+                <ul class="thanhngangphai">
+                    <li>
+                        <input type="text" placeholder="Tìm kiếm..." class="otimkiem">
+                        <button class="timkiem">Tìm Kiếm</button>
+                    </li>
+                    <li id="cart-icon" ><a href="Giohang.html">🛒</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Tài khoản ▼</a>
+                        <div class="dropdown-content">
+                            <a href="Thongtin.html" id="account-2">Thông tin cá nhân</a>
+                            <a href="lichsumua.html" style="margin-left: 20px;">Lịch sử mua hàng</a>
+                            <a href="Dangnhap.html" id="account-link">Đăng nhập</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="thongbao">
+            <div class="chaychu">
+                <h4><strong>MIỄN PHÍ VẬN CHUYỂN CHO MỌI ĐƠN HÀNG NGUYÊN GIÁ</strong></h4>
+                <h4><strong>MIỄN PHÍ VẬN CHUYỂN CHO MỌI ĐƠN HÀNG NGUYÊN GIÁ</strong></h4>
+                <h4><strong>MIỄN PHÍ VẬN CHUYỂN CHO MỌI ĐƠN HÀNG NGUYÊN GIÁ</strong></h4>
+                <h4><strong>MIỄN PHÍ VẬN CHUYỂN CHO MỌI ĐƠN HÀNG NGUYÊN GIÁ</strong></h4>
+                <h4><strong>MIỄN PHÍ VẶN CHUYỂN CHO MỌI ĐƠN HÀNG NGUYÊN GIÁ</strong></h4>
+                <h4><strong>MIỄN PHÍ VẬN CHUYỂN CHO MỌI ĐƠN HÀNG NGUYÊN GIÁ</strong></h4>
+            </div>
+        </div>
+    </header>
+    <main id="maincontent">
+        <div class="colum">
+            <ul class="item">
+                <li class="item-homes">
+                <a href="Sanpham.html" class="back-button" title="Quay lại trang sản phẩm">←</a>
+                </li>
+            </ul>
+            <div class="media-wrap"></div>
+            <div class="product-wrap">
+                <div class="product-info">
+                    <div class="product-infor"></div>
+                    <div class="product-addform"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="related-products">
+            <h2>CÓ THỂ BẠN THÍCH</h2>
+            <div class="related-products-grid">
+                <div class="osanpham">
+                <a href="chitietsp.html?id=7">
+                    <img src="anh/Q7.jpg" alt="Áo thun">
+                    <h3>Áo Thun Local Brand Sancool Unisex Premium Cotton Happy Cats</h3>
+                    <p class="price">250.000đ</p>
+                </a>
+                    <div class="xemngays">
+                        <button class="xemngay"><a href="chitietsp.html?id=7">XEM NGAY</a></button>
+                    </div>                
+                </div>
+                <div class="osanpham">
+                    <img src="anh/Q8.jpg" alt="Áo thun">
+                    <a href="chitietsp.html?id=8">
+                    <h3>Áo thun ENDE The First Battle Áo phông In nổi Local Brand nam nữ</h3>
+                    <p class="price">225.000đ</p>
+                    </a>
+                    <div class="xemngays">
+                        <button class="xemngay"><a href="chitietsp.html?id=8">XEM NGAY</a></button>
+                    </div>  
+                </div>
+                <div class="osanpham">
+                    <a href="chitietsp.html?id=6">
+                    <img src="anh/Q6.jpg" alt="Áo sơ mi">
+                    <h3>Áo Sơ Mi anh Tay Ngắn Dạo Phố Hợp Thời Trang Puffian</h3>
+                    <p class="price">325.000đ</p>
+                    </a>
+                    <div class="xemngays">
+                        <button class="xemngay"><a href="chitietsp.html?id=6">XEM NGAY</a></button>
+                    </div>
+                </div>
+            </div>
+            <h2 style="font-size: 30px;">Có thể bạn cần</h2>
+                <p style="margin-left: 150px; font-size: 25px;"><strong>Size Quần</strong></p>
+                <img src="anh/size.jpg" alt="size quần" style="width: 70%; height: auto;">
+                <p style="margin-left: 150px; font-size: 25px;"><strong>Size Áo</strong></p>
+                <img src="anh/size1.jpg" alt="size áo" style="width: 70%; height: auto;">
+        </div>
+    </main>
+
+    <footer>
+        <div class="thongtin">
+            <div class="thongtintrai">
+                <p>Dám khác biệt, dám tỏa sáng!</p>
+                <p>Đặt hàng và thu tiền tận nơi toàn quốc</p>
+                <p>Liên hệ: (036) 3348 6045</p>
+            </div>
+            <div class="thongtinphai">
+                <p>Về chúng tôi</p>
+                <p>Liên hệ</p>
+            </div>
+        </div>
+        <div class="thongtinduoi">
+            <p>© 2025 - Shop Thời Trang Bán Quần Áo GenZ</p>
+            <p>Địa chỉ đăng ký kinh doanh: Số 16 Trần Văn Ơn phường Phú Lợi tỉnh Bình Dương - Điện thoại: (036) 3348 6045 - Mua hàng: (036) 3348 6045 - Email: <a href="mailto:genzfashion@gmail.com">genzfashion@gmail.com</a></p>
+        </div>
+    </footer>
+    <script type="module" src="chitietsp.js"></script>
+    <!-- Đây là modal popup để xác nhận đơn hàng -->
+    <div id="orderModal" class="modal hidden" style="position:fixed; top:0; left:0; width:100%; height:100%;
+        background-color:rgba(0,0,0,0.6); z-index:1000; display:flex; justify-content:center; align-items:center;">
+        <div style="background:white; padding:20px; border-radius:10px; width:520px;">
+            <span class="close-button" onclick="document.getElementById('orderModal').classList.add('hidden')" style="float:right; cursor:pointer;">&times;</span>
+            <h2>Xác nhận đơn hàng</h2>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+            <img id="modal-image" src="" alt="Hình sản phẩm" style="width: 150px; display: block; margin: 10px auto; margin-right: 30px;">
+                <div style="flex: 1;">
+                    <p><strong>Sản phẩm:</strong> <span id="modal-name"></span></p>
+                    <p><strong>Kích thước:</strong> <span id="modal-size"></span></p>
+                    <p><strong>Số lượng:</strong> <span id="modal-quantity"></span></p>
+                    <p><strong>Thành tiền:</strong> <span id="modal-price"></span>đ</p>
+                </div>
+            </div>
+            <hr>
+            <h3>Thông tin khách hàng</h3>
+            <label>Họ tên:</label>
+            <input type="text" id="orderName" required style="width:100%; height: 30px; border-radius: 30px;"><br><br>
+
+            <label>Số điện thoại:</label>
+            <input type="text" id="orderPhone" required style="width:100%; height: 30px; border-radius: 30px;"><br><br>
+
+            <label>Địa chỉ:</label>
+            <textarea id="orderAddress" required style="width:100%; height: 50px;"></textarea><br><br>
+
+            <button id="submitOrder">Đặt hàng</button>
+            <button class="Huy" onclick="document.getElementById('orderModal').classList.add('hidden')">Hủy</button>
+        </div>
+    </div>
+
+
+<!-- Script JS cuối trang -->
+<script src="muangay.js"></script>
+</body>
+</html>
